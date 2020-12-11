@@ -48,8 +48,8 @@ class CharSetProber:
     def charset_name(self):
         return None
 
-    def feed(self, buf):
-        pass
+    def feed(self, byte_str):
+        raise NotImplementedError
 
     @property
     def state(self):
